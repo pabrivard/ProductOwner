@@ -1,8 +1,6 @@
 # Pierre Abrivard
 ## Product Owner
 
-📞 06 58 57 02 63 | ✉️ pierre.abrivard@outlook.com | [Profil LinkedIn](#)
-
 *Disponible immédiatement — Mobile sur toute la France*
 
 ---
