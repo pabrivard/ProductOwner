@@ -47,8 +47,7 @@ body{ font-size:9.4pt; color:var(--ink); line-height:1.42; }
 }
 .s-title .bar{ color:var(--accent); }
 
-.contact-row{ font-size:8.6pt; color:var(--side-text); margin-bottom:2.2mm; padding-left:3.4mm; position:relative; }
-.contact-row::before{ content:""; position:absolute; left:0; top:1.9mm; width:0.8mm; height:0.8mm; background:var(--accent); }
+.contact-row{ font-size:8.6pt; color:var(--side-text); margin-bottom:2.2mm; }
 .contact-row a{ color:var(--side-text); text-decoration:none; word-break:break-word; }
 
 .skill{ font-size:8.7pt; color:var(--side-text); margin-bottom:1.8mm; padding-left:3.4mm; position:relative; }
@@ -71,8 +70,11 @@ body{ font-size:9.4pt; color:var(--ink); line-height:1.42; }
 
 /* ---------- MAIN ---------- */
 .main{ margin-left:34%; padding:11mm 9mm 9mm 9mm; }
+.header-row{ display:flex; justify-content:space-between; align-items:center; gap:4mm; }
 .name{ font-size:25pt; font-weight:700; letter-spacing:.4pt; color:var(--accent); line-height:1.02; }
 .role{ font-size:11pt; font-weight:500; letter-spacing:2.6pt; text-transform:uppercase; color:var(--accent); margin-top:1.5mm; }
+.dl-link{ display:flex; align-items:center; justify-content:center; flex:0 0 auto; width:9mm; height:9mm; border:1.2pt solid var(--accent); border-radius:50%; text-decoration:none; }
+.dl-link svg{ width:4.4mm; height:4.4mm; fill:none; stroke:var(--accent); stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
 .rule{ height:1.4pt; background:var(--accent); width:100%; margin:5mm 0 4mm; }
 
 .m-title{ font-size:10pt; font-weight:600; letter-spacing:1.4pt; text-transform:uppercase; color:var(--accent); margin:0 0 3mm; display:flex; align-items:center; gap:3mm; }
@@ -88,7 +90,7 @@ body{ font-size:9.4pt; color:var(--ink); line-height:1.42; }
 .job-co{ font-size:8.8pt; font-style:italic; color:var(--muted); margin:.4mm 0 2mm; }
 .job ul{ list-style:none; }
 .job li{ font-size:9pt; color:#37444f; line-height:1.4; padding-left:4mm; position:relative; margin-bottom:1.6mm; }
-.job li::before{ content:""; position:absolute; left:0; top:1.7mm; width:1.7mm; height:1.7mm; background:var(--accent); }
+.job li::before{ content:""; position:absolute; left:0; top:2mm; width:1mm; height:1mm; background:var(--accent); }
 
 .prev-title{ font-size:8.6pt; font-weight:600; letter-spacing:1pt; text-transform:uppercase; color:var(--muted); margin:6mm 0 2.5mm; }
 .prev-row{ display:flex; justify-content:space-between; align-items:baseline; gap:4mm; padding:1.2mm 0; border-bottom:.6pt solid var(--hair); }
@@ -164,8 +166,15 @@ body{ font-size:9.4pt; color:var(--ink); line-height:1.42; }
 
   <!-- ============ MAIN ============ -->
   <main class="main">
-    <div class="name">Pierre Abrivard</div>
-    <div class="role">Product Owner</div>
+    <div class="header-row">
+      <div>
+        <div class="name">Pierre Abrivard</div>
+        <div class="role">Product Owner</div>
+      </div>
+      <a class="dl-link" href="https://pabrivard.github.io/ProductOwner/cv_pierre_abrivard_std3.pdf" target="_blank" rel="noopener" title="Télécharger le CV">
+        <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5"/><path d="M4 19h16"/></svg>
+      </a>
+    </div>
     <div class="rule"></div>
 
     <p class="profil">
