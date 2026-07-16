@@ -25,8 +25,8 @@ html{
 body{ font-size:9.4pt; color:var(--ink); line-height:1.42; }
 
 .grid{
-  position:relative; width:210mm; margin:10mm auto;
-  background:linear-gradient(to right, var(--navy) 34%, #ffffff 34%);
+  display:flex; align-items:stretch; width:210mm; margin:10mm auto;
+  background:#ffffff;
   box-shadow:0 0 14px rgba(0,0,0,.18);
 }
 @media print{
@@ -35,7 +35,7 @@ body{ font-size:9.4pt; color:var(--ink); line-height:1.42; }
 }
 
 /* ---------- SIDEBAR ---------- */
-.side{ position:absolute; top:0; left:0; width:34%; color:var(--side-text); padding:8.5mm 7mm 8mm 7mm; }
+.side{ flex:0 0 34%; width:34%; background:var(--navy); color:var(--side-text); padding:8.5mm 7mm 8mm 7mm; }
 .photo-wrap{ display:flex; justify-content:center; margin-bottom:5.5mm; }
 .photo{
   width:34mm; height:34mm; border-radius:5mm;
@@ -77,7 +77,7 @@ body{ font-size:9.4pt; color:var(--ink); line-height:1.42; }
 .interest::before{ content:""; position:absolute; left:0; top:1.9mm; width:0.8mm; height:0.8mm; background:var(--accent); }
 
 /* ---------- MAIN ---------- */
-.main{ margin-left:34%; padding:11mm 9mm 9mm 9mm; }
+.main{ flex:1 1 auto; min-width:0; padding:11mm 9mm 9mm 9mm; }
 .header-row{ display:flex; justify-content:space-between; align-items:center; gap:4mm; }
 .name{ font-size:25pt; font-weight:700; letter-spacing:.4pt; color:var(--accent); line-height:1.02; }
 .role{ font-size:11pt; font-weight:500; letter-spacing:2.6pt; text-transform:uppercase; color:var(--accent); margin-top:1.5mm; }
