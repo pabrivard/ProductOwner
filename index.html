@@ -50,7 +50,7 @@ body{ font-size:9.4pt; color:var(--ink); line-height:1.42; }
 .s-block{ margin-bottom:4.4mm; }
 .s-title{
   font-size:8pt; font-weight:600; letter-spacing:1.6pt; text-transform:uppercase;
-  color:var(--accent); padding-bottom:2mm; margin-bottom:3mm;
+  color:var(--accent); padding-bottom:2mm; margin-top:3.5mm; margin-bottom:3mm;
   border-bottom:1pt solid rgba(46,74,110,.25);
 }
 .s-title .bar{ color:var(--accent); }
@@ -62,8 +62,8 @@ body{ font-size:9.4pt; color:var(--ink); line-height:1.42; }
 .skill::before{ content:""; position:absolute; left:0; top:1.9mm; width:0.8mm; height:0.8mm; background:var(--accent); }
 
 .tag-label{ font-size:7.6pt; font-weight:600; letter-spacing:.6pt; text-transform:uppercase; color:var(--side-muted); margin:2mm 0 1.4mm; }
-.tags{ display:flex; flex-wrap:wrap; gap:1.4mm; }
-.tag{ font-size:7.6pt; color:var(--side-text); background:transparent; border:.5pt solid rgba(46,74,110,.35); border-radius:2pt; padding:.7mm 1.6mm; }
+.tags{ font-size:0; }
+.tag{ display:inline-block; font-size:7.6pt; color:var(--side-text); background:none; border:.75pt solid #8798AC; border-radius:2pt; padding:.7mm 1.6mm; margin:0 1.4mm 1.4mm 0; }
 
 .edu{ margin-bottom:2.3mm; }
 .edu .d{ font-size:8.6pt; font-weight:600; color:var(--accent); }
@@ -79,7 +79,7 @@ body{ font-size:9.4pt; color:var(--ink); line-height:1.42; }
 /* ---------- MAIN ---------- */
 .main{ flex:1 1 auto; min-width:0; padding:11mm 9mm 9mm 9mm; }
 .header-row{ display:flex; justify-content:space-between; align-items:center; gap:4mm; }
-.name{ font-size:25pt; font-weight:700; letter-spacing:.4pt; color:var(--accent); line-height:1.02; }
+.name{ font-size:14pt; font-weight:700; letter-spacing:.4pt; color:var(--accent); line-height:1.02; }
 .role{ font-size:11pt; font-weight:500; letter-spacing:2.6pt; text-transform:uppercase; color:var(--accent); margin-top:1.5mm; }
 .dl-link{ display:flex; align-items:center; justify-content:center; flex:0 0 auto; width:9mm; height:9mm; border:1.2pt solid var(--accent); border-radius:50%; text-decoration:none; }
 .dl-link svg{ width:4.4mm; height:4.4mm; fill:none; stroke:var(--accent); stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
@@ -120,39 +120,40 @@ body{ font-size:9.4pt; color:var(--ink); line-height:1.42; }
     </div>
 
     <div class="s-block">
-      <div class="s-title"><span class="bar">/</span> Contact</div>
-      <div class="contact-row">06 58 57 02 63</div>
-      <div class="contact-row"><a href="mailto:pierre.abrivard@icloud.com">pierre.abrivard@icloud.com</a></div>
-      <div class="contact-row"><a href="https://linkedin.com/in/pierreabrivard">linkedin.com/in/pierreabrivard</a></div>
+      <div class="contact-row" style="margin-bottom:1.1mm;">06 58 57 02 63</div>
+      <div class="contact-row" style="margin-bottom:1.1mm;"><a href="mailto:pierre.abrivard@icloud.com">pierre.abrivard@icloud.com</a></div>
+      <div class="contact-row" style="margin-bottom:1.1mm;"><a href="https://pabrivard.github.io/ProductOwner/">pabrivard.github.io/ProductOwner/</a></div>
     </div>
 
     <div class="s-block">
       <div class="s-title"><span class="bar">/</span> Compétences clés</div>
-      <div class="skill">Pilotage produit Agile / Scrum</div>
       <div class="skill">Product management</div>
+      <div class="skill">Pilotage produit Agile / Scrum</div>
+      <div class="skill">Phase de discovery</div>
+      <div class="skill">Gestion de backlogs</div>
+      <div class="skill">Tests et recettage</div>
       <div class="skill">Data analysis / BI</div>
       <div class="skill">Coordination d'équipes</div>
-      <div class="skill">Marketing / Commercial</div>
     </div>
 
     <div class="s-block">
       <div class="s-title"><span class="bar">/</span> Outils &amp; Technologies</div>
       <div class="tag-label">Outils</div>
       <div class="tags">
-        <span class="tag">Jira</span><span class="tag">Azure DevOps</span><span class="tag">Figma</span>
-        <span class="tag">Miro</span><span class="tag">Notion</span><span class="tag">Postman</span>
-        <span class="tag">SSMS</span><span class="tag">Claude Code</span>
+        <span class="tag">Jira / Confluence</span><span class="tag">Azure DevOps</span><span class="tag">Figma</span>
+        <span class="tag">Postman</span>
+        <span class="tag">SSMS</span><span class="tag">Claude Code / Design</span><span class="tag">Power BI</span>
       </div>
       <div class="tag-label">Technologies (notions)</div>
       <div class="tags">
         <span class="tag">SQL</span><span class="tag">HTML/CSS</span><span class="tag">JS/TS</span>
-        <span class="tag">React</span><span class="tag">MS Fabric</span><span class="tag">Power BI</span>
+        <span class="tag">React</span>
       </div>
     </div>
 
     <div class="s-block">
       <div class="s-title"><span class="bar">/</span> Formation</div>
-      <div class="edu"><div class="d">Préparation Agile / Scrum (PSM® &amp; PSPO®)</div><div class="m">Udemy <span class="y">2026</span></div></div>
+      <div class="edu"><div class="d">Agile / Scrum (PSM® &amp; PSPO®)</div><div class="m">Udemy <span class="y">2026</span></div></div>
       <div class="edu"><div class="d">Management de la Qualité</div><div class="m">Université de Rennes II <span class="y">2008</span></div></div>
       <div class="edu"><div class="d">Master Marketing</div><div class="m">Rennes School of Business <span class="y">2007</span></div></div>
       <div class="edu"><div class="d">Baccalauréat Européen</div><div class="m">École Européenne de Bruxelles <span class="y">2003</span></div></div>
@@ -167,8 +168,8 @@ body{ font-size:9.4pt; color:var(--ink); line-height:1.42; }
     <div class="s-block">
       <div class="s-title"><span class="bar">/</span> Centres d'intérêt</div>
       <div class="interest">Environnement &amp; Écologie</div>
-      <div class="interest">RSE</div>
       <div class="interest">Actionnariat &amp; Sociétariat</div>
+      <div class="interest">Investissements durables</div>
     </div>
   </aside>
 
@@ -186,7 +187,7 @@ body{ font-size:9.4pt; color:var(--ink); line-height:1.42; }
     <div class="rule"></div>
 
     <p class="profil">
-      <b>Product Owner avec 8 ans d'expérience</b>, j'accompagne les organisations dans la définition
+      <b>Product Owner avec 9 ans d'expérience</b>, j'accompagne les organisations dans la définition
       et le pilotage de leurs produits digitaux. De l'analyse du besoin à la mise en production,
       j'aligne métier, utilisateurs et développeurs autour d'une vision commune : livrer de la valeur
       <b>(value-driven delivery)</b>.
@@ -195,22 +196,33 @@ body{ font-size:9.4pt; color:var(--ink); line-height:1.42; }
     <div class="m-title">Expérience professionnelle</div>
 
     <div class="job">
+      <div class="job-head"><span class="job-title">Consultant - Product Owner &amp; Delivery Manager</span><span class="job-date">Depuis 2026</span></div>
+      <div class="job-co">Indépendant</div>
+      <ul>
+        <li>Product Owner d'un projet de plateforme digitale : cadrage produit, gestion du backlog, coordination des équipes de développement.</li>
+        <li>Delivery : planification des livraisons, réalisation des compagnes de tests, coordination des déploiements.</li>
+        <li>Accompagnement et coaching d'équipes PO / PPO.</li>
+        <li>Conseil et pilotage d'un projet de refonte complète d'un ERP : organisation, staffing, animation des rituels daily, weekly et comités stakeholders.</li>
+      </ul>
+    </div>
+
+    <div class="job">
       <div class="job-head"><span class="job-title">Product Owner</span><span class="job-date">2018 - 2026</span></div>
       <div class="job-co">Executive Relocations</div>
       <ul>
-        <li>Pilotage produit d'un ERP SaaS : gestion du cycle de vie, définition de la roadmap, rédaction des User Stories et spécifications fonctionnelles, maquettage Figma, programme de tests, coordination avec les développeurs et suivi des releases.</li>
+        <li>Pilotage produit d'un ERP Saas Web et mobile : définition de la roadmap, rédaction des User Stories et spécifications fonctionnelles, programme de tests, coordination des développeurs et suivi des releases.</li>
         <li>Définition et communication de la vision produit et de la stratégie associée, suivi des indicateurs de performance (KPIs, taux d'adoption, satisfaction utilisateurs), gestion des parties prenantes et arbitrages de priorisation.</li>
-        <li>Pilotage Agile / Scrum des développements web et mobile : priorisation du backlog, animation des cérémonies, accompagnement au changement et support post-déploiement.</li>
+        <li>Pilotage Agile / Scrum : priorisation du backlog, animation des cérémonies, accompagnement au changement et support post-déploiement.</li>
         <li>Architecture BI &amp; Data : conception d'une infrastructure ETL sous Microsoft Fabric, automatisation de traitements de données avec Python, management d'une équipe de data analysts.</li>
       </ul>
     </div>
 
     <div class="job">
-      <div class="job-head"><span class="job-title">Chef de projet digital</span><span class="job-date">2017 - 2018</span></div>
+      <div class="job-head"><span class="job-title">Chef de projets digitaux</span><span class="job-date">2017 - 2018</span></div>
       <div class="job-co">Executive Relocations</div>
       <ul>
-        <li>Conception et lancement d'une marketplace digitale (comparateur de devis de déménagement), développée initialement pour le ministère des Armées dans le cadre d'une expérimentation, puis déployée sur d'autres clients après validation.</li>
-        <li>Lancement d'une application mobile iOS &amp; Android de gestion des voyages internationaux et des notes de frais : pilotage bout-en-bout, rédaction des User Stories, déploiement et accompagnement au changement.</li>
+        <li>Conception et lancement d'une marketplace digitale (comparateur de devis), développée pour le ministère des Armées, puis déployée sur l'ensemble des clients.</li>
+        <li>Lancement d'apps mobile iOS &amp; Android (Outils de tracking, états de lieux, gestion de voyages et de notes de frais) : pilotage projet, rédaction des US, gestion du backlog, tests, déploiement et accompagnement au changement.</li>
       </ul>
     </div>
 
